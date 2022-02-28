@@ -8,10 +8,13 @@
 		body{
 			margin: 0;
 			background-image: url("bg.jpeg");
+			background-repeat: no-repeat;
 			background-size: 100%;
-			background-size: cover;
+			background-attachment: fixed;
+			
 		}
 		h1{
+			position: fixed;
 			text-align: center;
 			background-color:black;
 			height: 100px;
@@ -19,30 +22,37 @@
 			margin: 0;
 			padding:10px;
 			display: block;
+			top: 0;
 		}
 		div.gallery {
 			margin: 10px;
-         		border: 1px solid lavenderblush;
-          		border-radius: 30px;
-          		float: left;
-          		width: 200px;	
-        	}
+          border: 1px solid lavenderblush;
+          border-radius: 30px;
+          float: left;
+          width: 200px;
+          position: relative;
+        }
 
-        	div.gallery:hover {
-          		border: 1px solid #777;
-          		border-radius: 30px 30px;
-        	}
+        div.gallery:hover {
+          border: 1px solid #777;
+          border-radius: 30px 30px;
+        }
 
-        	div.gallery img {
-          		width: 200px;
-          		height:200px;
-          		border-radius: 30px;
-        	}
+        div.gallery img {
+          width: 200px;
+          height:200px;
+          border-radius: 30px;
+        }
 
-        	div.desc {
-          		padding: 15px;
-          		text-align: center;
-        	}
+        div.desc {
+          padding: 15px;
+          text-align: center;
+          position: absolute;
+          bottom: 8px;
+          left: 0px;
+          right: 0px;
+
+        }
 
 	</style>
 </head>
@@ -53,43 +63,45 @@
 
 
 	<div style="margin-left: 25%;margin-top: 10%; ">
-	<div  class="gallery"><a href="chilli chicken/chillichicken.html"><img src="chilli chicken/chilli1.jpg" height="200" width="200" ></a>
-	</div>
 
-	<div  class="gallery">
-	<a href="tandoori/Tandoori.html"><img src="tandoori/tandoori1.jpg" height="200" width="200" ></a>
-	</div>
-
-	<div  class="gallery">
-	<a href="shawarma/shawarma.html"><img src="shawarma/shawarma2.jpg" height="200" width="200" ></a>
+		<div  class="gallery"><a href="chilli chicken/chillichicken.html"><img src="chilli chicken/chilli1.jpg" height="200" width="200" ></a><div class="desc">Chillichicken</div>
 	</div>
 	
+
 	<div  class="gallery">
-	<a href="french fries/french fries.html"><img src="french fries/fries1.jpg" height="200" width="200" ></a>
-	</div>
-		
+		<a href="tandoori    tandoori/Tandoori.html"><img src="tandoori/tandoori1.jpg" height="200" width="200" ></a>
+	<div class="desc">Tandoori</div></div>
+	
+
+	<div  class="gallery">
+		<a href="shawarma/shawarma.html"><img src="shawarma/shawarma2.jpg" height="200" width="200" ></a>
+	<div class="desc">Shawarma</div></div>
+
+		<div  class="gallery">
+		<a href="french fries/french fries.html"><img src="french fries/fries1.jpg" height="200" width="200" ></a>
+	<div class="desc">French fries</div></div>
+
 	<div  class="gallery"><a href="chicken biryani/Biriyani.html"><img src="chicken biryani/chickenbiryani1.jpg" height="200" width="200" ></a>
-	</div>
-		
-	<div  class="gallery"><a href="chicken noodles/chicken_noodles.html"><img src="chicken noodles/noodles3.jpg" height="200" width="200" ></a>
-	</div>
-		
-	<div  class="gallery"><a href="chilli parota/chilliparotta.html"><img src="chilli parota/chilliparota2.jpg" height="200" width="200" ></a>
-	</div>
-		
-	<div  class="gallery"><a href="truffle/Truffle.html"><img src="truffle/truffle1.jpg" height="200" width="200" ></a>
-	</div>
-		
-	<div  class="gallery"><a href="black forest/blackforest.html"><img src="black forest/forest4.jpg" height="200" width="200" ></a>
-	</div>
+<div class="desc">Chicken biryani</div></div>
 
-	<div  class="gallery"><a href="milkshakes/milkshakes.html"><img src="milkshakes/shakes1.jpg"height="200" width="200" ></a>
-	</div>
-		
-	<div  class="gallery"><a href="puffs/puff.html"><img src="puffs/puff1.jpg"height="200" width="200"></a></div>
+	<div  class="gallery"><a href="chicken noodles/chicken_noodles.html"><img src="chicken noodles/noodles3.jpg" height="200" width="200" ></a>
+<div class="desc">Chicken_noodles</div></div>
+
+	<div  class="gallery"><a href="chilli parota/chilliparotta.html"><img src="chilli parota/chilliparota2.jpg" height="200" width="200" ></a>
+<div class="desc">Chilliparotta</div></div>
+
+	<div  class="gallery"><a href="truffle/Truffle.html"><img src="truffle/truffle1.jpg" height="200" width="200" ></a><div class="desc">Chocolate truffle</div></div>
+
+	<div  class="gallery"><a href="black forest/blackforest.html"><img src="black forest/forest4.jpg" height="200" width="200" ></a>
+<div class="desc">Black forest</div></div>
+
+	<div  class="gallery"><a href="milkshakes/milkshakes.html"><img src="milkshakes/shakes1.jpg"height="200" width="200" ></a><div class="desc">Milkshake</div></div>
+
+<div  class="gallery"><a href="puffs/puff.html"><img src="puffs/puff1.jpg"height="200" width="200"></a><div class="desc">Puffs</div></div>
+
+	<div  class="gallery"><a href="samosa/samosa.html"><img src="samosa/samosa1.jpg"height="200" width="200"></a>
+	<div class="desc">Samosa</div></div>
 	
-	<div  class="gallery"><a href="samosa/samosa.html"><img src="samosa/samosa1.jpg"height="200" width="200"></a></div>
-	</div>
 
 </body>
 </html>
